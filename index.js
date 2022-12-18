@@ -115,7 +115,6 @@ mention != undefined ? mention.push(mentionByReply) : []
 const mentionUser = mention != undefined ? mention.filter(n => n) : []
 
 // auto read
-conn.readMessages([msg.key])
 
 const reply = (teks) => {conn.sendMessage(from, { text: teks }, { quoted: msg })}
 
