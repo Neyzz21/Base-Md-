@@ -114,9 +114,6 @@ const mention = typeof(mentionByTag) == 'string' ? [mentionByTag] : mentionByTag
 mention != undefined ? mention.push(mentionByReply) : []
 const mentionUser = mention != undefined ? mention.filter(n => n) : []
 
-// auto read
-
-const reply = (teks) => {conn.sendMessage(from, { text: teks }, { quoted: msg })}
 
 const virusnya = { 
 key: {
